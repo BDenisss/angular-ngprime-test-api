@@ -1,0 +1,10 @@
+{
+    "/api": {
+    "target": "https://eu.api.riotgames.com",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+        "^/api": ""
+        }
+    }
+}
