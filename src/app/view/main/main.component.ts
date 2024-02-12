@@ -30,11 +30,7 @@ export class MainComponent {
     private lolService: LolService,
     private http: HttpClient,
     private formBuilder: FormBuilder,
-  )
-
-  {
-
-  }
+  ) {}
 
   ngOnInit() {
     this.getData();

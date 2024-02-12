@@ -1,0 +1,16 @@
+<p>product {{productByID.id}} works! </p>
+<a class="underline text-blue-500" [routerLink]="['/']">Home</a>
+
+<div class="mx-12 flex items-center justify-center gap-12">
+    <div>
+        <img class="w-[64em] object-contain" [src]="productByID.image" [alt]="productByID.title">
+    </div>
+    <div class="flex flex-col gap-2">
+        <h1 class="text-2xl font-bold">{{productByID.title}}</h1>
+        <p class="text-xl font-semibold">{{productByID.price}}€</p>
+        <p class="text-lg font-semibold">{{productByID.category}}</p>
+        <p class="text-lg">{{productByID.description}}</p>
+        <p-rating [(ngModel)]="productByID.rating.rate" [readonly]="true" [cancel]="false" class=""></p-rating>
+        <p-button label="Add to Cart" icon="pi pi-shopping-cart" class="p-button-rounded mt-2" [disabled]="productByID.inventoryStatus === 'OUTOFSTOCK'"></p-button>
+    </div>
+</div>
