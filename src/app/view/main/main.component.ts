@@ -21,11 +21,8 @@ export class MainComponent {
   selectedSize: any  // Initialisez selectedSize
   public products: any[] = []; // Initialisez products
   sortOptions: any[] = [];
-
   public sortKey!: string;
-
   sortOrder!: number;
-
   sortField!: string;
 
   
